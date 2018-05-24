@@ -11,7 +11,7 @@ When duration passed, device wakes up and repeats.
 Code mainly copied from the pycom user forums, so thanks to those guys. 
 
 
-"You Must do this first"
+==== PREREQUISITE ====
 
 Upgrade GPY to latest firmware using the Pycom Fimrware Updater tool. 
 Note 2:
