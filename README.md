@@ -1,7 +1,10 @@
 "# Pycom-CAT-M1-Telstra" 
 
 
-This code is for the Pycom GPY chip, and uses CAT-M1 on the Telstra network. The logic is simple.
+This code is for the Pycom GPY chip, and uses CAT-M1 on the Telstra network. 
+Only one library (urequests.py) is required (in /lib folder). This lib is used for sending http requests. 
+
+The logic is simple.
 
 The device sets up an LTE connection.
 It send data to a platform (I.E it does a HTTP post).
