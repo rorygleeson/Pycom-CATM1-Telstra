@@ -15,22 +15,22 @@ def send_at_cmd_pretty(cmd):
 
 send_at_cmd_pretty('AT+CFUN=0')
 send_at_cmd_pretty('AT!="clearscanconfig"')
-send_at_cmd_pretty('AT!="addscanfreq band=28 dl-earfcn=9410"') # lte frequency band - from forum
-send_at_cmd_pretty('AT+CGDCONT=1,"IP","telstra.m2m"') # Aldi sim / "mdata.net.au" Aldi APN (aka Telstra network)
-send_at_cmd_pretty('AT+CEREG=2') # pg 150 Monarch_4G_EZ...pdf, sets --> enable network registration and location information unsolicited result code
-send_at_cmd_pretty('AT+CFUN=1') # enable modem & set to full functionality mode
+send_at_cmd_pretty('AT!="addscanfreq band=28 dl-earfcn=9410"') 
+send_at_cmd_pretty('AT+CGDCONT=1,"IP","telstra.m2m"') 
+send_at_cmd_pretty('AT+CEREG=2') 
+send_at_cmd_pretty('AT+CFUN=1')
 
 while not lte.isattached():
     time.sleep(1)
     send_at_cmd_pretty('AT!="showphy"')
     send_at_cmd_pretty('AT!="fsm"')
-    send_at_cmd_pretty('AT+CEREG?') #--> pg 150 Monarch_4G_EZ...pdf -- returns info see below,
+    send_at_cmd_pretty('AT+CEREG?') 
 
-lte.connect()       # start a data session and obtain an IP address
+lte.connect()       # start session
 while not lte.isconnected():
     time.sleep(4.0)
 
-print ('connected') # used for debugging
+print ('connected') 
 time.sleep(1.0)
 
 print("now upload to platform......")
