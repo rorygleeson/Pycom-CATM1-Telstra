@@ -1,1 +1,1 @@
-"# Pycom-CATM1-Telstra" 
+"# Pycom-CAT-M1-Telstra" 
