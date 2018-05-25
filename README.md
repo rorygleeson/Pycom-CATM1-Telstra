@@ -13,6 +13,13 @@ When duration passed, device wakes up and repeats.
 
 Code mainly copied from the pycom user forums, so thanks to those guys. 
 
+To do
+- build in error handling..
+- start testing current consumption and improving battery lifespan (ex disable WIFI, BLE ) 
+
+Performace
+- Has worked fine for 3 days, updates every 5 minutes all successfull.
+- Sitting on floor, antenna as per diagram. 
 
 ==== PREREQUISITE ====
 
