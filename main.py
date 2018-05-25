@@ -45,7 +45,7 @@ r.close()
 print('disconnect & detach modem')
 lte.disconnect()
 lte.dettach()
-
+lte.deinit()
 print('clean up')
 lte = None
 gc.collect()
