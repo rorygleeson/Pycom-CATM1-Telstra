@@ -30,4 +30,4 @@ Also update the radio firmware on the Monarch chip as per here (https://docs.pyc
 Modify the APN in the code to suit yours. Best to first test the SIM in a mobile phone, ensure you can get a data connection, then use the same APN in the code. I use telstra.m2m (my SIM is provided by M2MOne/Jasper) 
 
 
-![alt text](https://github.com/rorygleeson/Pycom-CATM1-Telstra/edit/master/gpyCatM1.jpg)
+![Image](https://github.com/rorygleeson/Pycom-CATM1-Telstra/blob/master/gpyCatM1.jpg)
